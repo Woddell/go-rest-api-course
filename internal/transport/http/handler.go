@@ -21,7 +21,7 @@ func NewHandler() *Handler {
 func (h *Handler) SetupRoutes() {
 	fmt.Println("Setting up routes.")
 	h.Router = mux.NewRouter()
-	h.Router.HandleFunc("api/health", func(w http.ResponseWriter, r *http.Request) {
+	h.Router.HandleFunc("/api/health", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "OK")
 	})
 }
