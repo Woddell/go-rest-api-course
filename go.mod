@@ -1,4 +1,4 @@
-module github.com/woddell/go-rest-api-course
+module github.com/Woddell/go-rest-api-course
 
 go 1.16
 
